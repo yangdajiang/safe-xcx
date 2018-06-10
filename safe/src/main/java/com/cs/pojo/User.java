@@ -1,6 +1,7 @@
 package com.cs.pojo;
 
-import javax.validation.constraints.Min;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
@@ -13,6 +14,7 @@ public class User implements Serializable {
      *
      * @mbg.generated
      */
+    @JsonIgnore
     private Integer id;
 
     /**
@@ -22,6 +24,7 @@ public class User implements Serializable {
      *
      * @mbg.generated
      */
+    @JsonIgnore
     @NotNull(message = "User对象不能有空值")
     @Size(min = 25,max = 30,message = "open_id位数错误")
     private String openId;
@@ -121,6 +124,7 @@ public class User implements Serializable {
      *
      * @mbg.generated
      */
+    @JsonIgnore
     private String nowPlace;
 
     /**

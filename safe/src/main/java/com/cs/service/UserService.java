@@ -26,7 +26,7 @@ public class UserService implements UserServiceImpl{
         if(user==null){
             resultPojo = ResultUtil.result(-1,"该用户为第一次登陆",null);
         }else {
-            resultPojo = ResultUtil.result(0,"该用户数据已存在",null);
+            resultPojo = ResultUtil.result(0,"该用户数据已存在",user);
         }
         return resultPojo;
     }
