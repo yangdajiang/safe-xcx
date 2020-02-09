@@ -1,1 +1,5 @@
-# safe-xcx safe小程序后台 springboot开发
+## safe小程序后台-SpringBoot开发 :watch:
+### 主要功能 :pencil2:
+- 小程序内保存设置紧急联系人
+- 实现保持前台与后台同步（思路：心跳机制）
+- 设置定时器向紧急联系人发送短信提示
